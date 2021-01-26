@@ -1,0 +1,54 @@
+.spin-result-wrapper {
+	display: none;
+	padding: 0 rem(10);
+	box-sizing: border-box;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+	left: 0;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .6);
+	text-align: center;
+}
+.pop-up-window {
+	position: relative;
+	max-width: rem(533);
+	right: 0px;
+	left: 0px;
+	top: 50%;
+	transform translate(0,-50%)
+	margin: 0px auto;
+	text-align: center;
+	padding: rem(10);
+	animation: 0.7s ease 0s normal none 1 running pop-up-appear;
+}
+
+.pop-up-button {
+	width: rem(265)
+	height: rem(58)
+	display: block
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: rem(25);
+	font-weight: bold
+	border-radius: rem(30);
+	background: linear-gradient(180deg, #ff6a00, #ee0979);
+	color: #fff
+	border: none;
+	cursor: pointer;
+	outline: medium none;
+	margin: -3.2rem auto 0
+	position: relative
+	z-index: 5
+	padding: 0.6rem 0
+}
+.btn-close{
+	position: absolute
+	right: 0.5rem
+	top: 1rem
+	width: rem(30)
+	height: rem(30)
+	//background: rgba(255,255,255,.2)
+	background-position: -108px;
+}

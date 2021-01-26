@@ -1,0 +1,404 @@
+.prizewheel__title {
+	text-align: center
+	
+	h2 {
+		color: #ea0f33;
+		font-size: rem(32);
+		font-weight: bold;
+	}
+	
+	p {
+		color: #000000;
+		font-size: 25px;
+	}
+}
+
+.prizewheel__title-1 {
+	p {
+		margin-top: 0.6rem
+	}
+}
+
+.prizewheel__title-2 {
+	margin-top: 2.5rem
+	
+	h3 {
+		color: #ea0f33;
+		font-size: rem(25);
+	}
+	
+	p {
+		margin-top: 1.5rem
+	}
+}
+
+.prizewheel__title-3 {
+	margin-top: 2rem
+	
+	h2 {
+		color: #000000
+		line-height: 1.8
+	}
+	
+	h3 {
+		font-size: rem(28)
+	}
+}
+
+.wheel {
+	width: 100%
+	max-width: rem(585)
+	margin: 2rem auto 0
+	position: relative
+	border-radius: 100%;
+	box-shadow: 0 0 7px 0 rgba(64, 64, 64, .6), 0 8px 50px rgba(64, 64, 64, .3);
+	
+	&:before {
+		content ""
+		display: block;
+		position: absolute;
+		background: url("../images/lotery-arrow.png") no-repeat
+		-webkit-background-size: cover
+		background-size: cover
+		left: 50%
+		transform: translate(-51%, 0);
+		bottom: -5rem;
+		width: rem(325);
+		height: rem(220);
+		z-index: 999
+	}
+}
+
+.wheel-cursor {
+	width: rem(128)
+	position: absolute
+	top: 50%
+	left: 50%
+	transform translate(-50%, -50%)
+	cursor: pointer
+	transition all 300ms ease-in-out
+	
+	&:hover {
+		transform translate(-50%, -50%) scale(1.1)
+	}
+}
+
+.super-rotation {
+	animation-name: super-rotation;
+	animation-duration: 7s;
+	animation-fill-mode: forwards;
+	transition-timing-function: ease-in-out;
+}
+
+@keyframes super-rotation {
+	70% {
+		transform: rotate(1673deg);
+	}
+	100% {
+		transform: rotate(1662deg);
+	}
+}
+
+.total-members {
+	margin-top: 6rem
+	text-align: center
+	
+	p {
+		text-align: center
+		color: #0d0d0d;
+		font-size: rem(24);
+		font-weight: bold;
+		line-height: 1.8;
+		
+	}
+}
+
+.currentMembers {
+	p {
+		font-size: rem(32);
+		color: #f00
+	}
+}
+
+.form-block {
+	position: relative
+}
+
+.form-block-title {
+	width: 100%
+	max-width rem(400)
+	text-align: center
+	margin-top: rem(93)
+	margin-left: rem(93)
+	margin-bottom: 2.7rem
+	h3 {
+		font-family: "Roboto", sans-serif;
+		color: #ea0f33;
+		font-size: rem(31);
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+}
+.form-block-img{
+	width: 100%
+	max-width: rem(780)
+}
+.form-info {
+	width: 100%
+	max-width: rem(430)
+	background: linear-gradient(180deg, rgba(35, 177, 143, 1.0), rgba(0, 83, 11, 1.0));
+	box-shadow: 0px 0px 18px 16px rgba(30, 30, 30, 1.0);
+	padding: 1rem 1rem
+	position: absolute
+	right: 0
+	top: 0
+}
+
+.form-info-title {
+	text-align: center
+	
+	h3 {
+		font-family: "Montserrat", sans-serif;
+		color: #ffffff;
+		font-size: rem(28);
+		text-align: center;
+		line-height: 1.6;
+	}
+}
+
+.form-info-subtitle {
+	text-align: center
+	
+	h3 {
+		color: #fff;
+		font-size: rem(20);
+		font-weight: bold;
+		line-height: 1.6;
+	}
+	
+	p {
+		color: #ffffff;
+		font-size: rem(18);
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+}
+
+.countdown-main {
+	width: 100%
+	max-width: rem(285)
+	margin: 1rem auto 0
+}
+
+.countdown-item {
+	width: rem(63);
+	height: rem(55)
+	margin: 0 rem(10);
+	border: 6px double #000;
+	border-radius: rem(10);
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #000;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1
+	
+}
+
+.countdown-numbers {
+	display: flex
+	justify-content: center
+	align-items: center
+}
+
+.countdown-text {
+
+}
+
+.countdown-names-item {
+	width: rem(63);
+	text-align: center
+	margin: 0 rem(10);
+	p {
+		color: #000;
+		font-size: rem(16);
+		font-weight: bold;
+		line-height: 1.6;
+		
+	}
+}
+
+.countdown-names__wrap {
+	display: flex
+	justify-content: center
+}
+
+.flash-animation {
+	animation-name: flash;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	
+}
+
+@keyframes flash {
+	0%, 100%, 50% {
+		opacity: 1
+	}
+	25%, 75% {
+		opacity: 0
+	}
+}
+
+.bounce-animation {
+	animation-name: bounce;
+	animation-delay: 1s;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0)
+	}
+	
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform: translateY(-30px);
+		transform: translateY(-30px)
+	}
+	
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform: translateY(-15px);
+		transform: translateY(-15px)
+	}
+}
+
+.form-item {
+	width: 100%
+	margin-bottom: 1.5rem
+	
+	input {
+		width: 100%
+		color: rgb(0, 0, 0);
+		font-size: rem(20);
+		line-height: 1.6;
+		font-family: 'Open Sans', sans-serif;
+		padding: 5px
+		background: #ffffff
+		border-radius: rem(15)
+		
+		&::placeholder {
+			color: rgb(0, 0, 0);
+			font-size: rem(20);
+			line-height: 1.6;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
+	
+	button {
+		color: #ffffff;
+		font-size: 17px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+		border: none
+		background: linear-gradient(180deg, rgba(238, 58, 126, 1.0), rgba(187, 0, 32, 1.0));
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: auto
+		border-radius: rem(25)
+		padding: 0.8rem 1.25rem;
+		cursor: pointer
+	}
+}
+
+.form-info-txt {
+	text-align: center
+	
+	h3 {
+		font-family: "Roboto Slab", serif;
+		color: #ffffff;
+		font-size: 25px;
+		font-weight: bold;
+		font-style: italic;
+		line-height: 1.6;
+	}
+	
+	h4 {
+		color: #ffffff;
+		font-size: rem(16);
+		font-weight: bold;
+		line-height: 1.6;
+		
+		span {
+			font-family: "Roboto Slab", serif;
+			color: #ff0000;
+			font-size: rem(28)
+			font-weight: bold;
+			line-height: 1.6;
+			text-shadow: rgb(255, 255, 255) 1px -2px 0px;
+		}
+	}
+	
+	h5 {
+		font-family: "Roboto Slab", serif;
+		text-decoration: line-through;
+		color: #ffffff;
+		font-size: rem(16);
+		line-height: 1.6;
+		font-weight: 400
+	}
+	h6{
+		font-family: "Roboto", sans-serif;
+		color: #ffffff;
+		font-size: rem(47);
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+	p{
+		color: #ffffff;
+		font-size: rem(18)
+		font-weight: bold;
+		text-align: center;
+		line-height: 1.6;
+	}
+}
+	.form-block-text{
+		text-align: center
+		margin-top: 4rem
+		padding: 0 9rem
+		h3{
+			font-family: "Roboto", sans-serif;
+			color: #ea0f33;
+			font-size: rem(28);
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+		}
+		p{
+			font-family: "Roboto", sans-serif;
+			color: #ea0f33;
+			font-size: rem(31);
+			font-weight: bold;
+			text-align: center;
+			line-height: 1.6;
+			margin-top: 1rem
+			span{
+				margin: 0 1rem
+			}
+		}
+	}
+		.show-after-form{
+			display: none
+		}

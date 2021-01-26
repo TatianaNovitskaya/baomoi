@@ -1,0 +1,154 @@
+.btn {
+	margin: 0
+	text-align: center
+	text-decoration: none
+	cursor: pointer
+	border-radius: rem(10);
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	z-index: 5
+	color: white;
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase
+	transition background 300ms ease-in-out
+}
+
+.btn_small {
+	width: 8.75rem;
+	height: 2.75rem;
+}
+
+.btn_big {
+	width: 21.25rem;
+	height: 3.75rem;
+}
+
+.btn_neon-green {
+	//border: 0.063rem solid white;
+	//box-shadow: 0 0.125rem 0.563rem 0.063rem #5bff57, 0 0 0.75rem #5bff57, inset 0 0 0.75rem #5bff57;
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	&:after {
+		content ""
+		display: inline-block;
+		position: absolute;
+		background: url('../images/btn.png') no-repeat center;
+		background-size: contain
+		//top: -8.9rem;
+		//left: -7.6rem;
+		width: 36.75rem;
+		height: 21.25rem;
+		pointer-events: none;
+		top: 50%
+		left: 50%
+		transform translate(-50%, -50%)
+		opacity: 1
+		transition opacity 300ms ease-in-out
+	}
+	&:before {
+		content ""
+		display: inline-block;
+		position: absolute;
+		background: url('../images/btn-hover.png') no-repeat center;
+		background-size: contain
+		width: 36.75rem;
+		height: 21.25rem;
+		pointer-events: none;
+		opacity: 0
+		top: 50%
+		left: 50%
+		transform translate(-50%, -50%)
+		transition opacity 300ms ease-in-out
+	}
+	span {
+		color: #06ff00;
+	}
+	&:hover {
+		&:after {
+			opacity: 0
+			
+		}
+		&:before {
+			opacity: 1
+		}
+	}
+}
+
+.btn__button_neon-green{
+	border: none
+	border-radius: rem(10);
+	padding: 0 6.2rem;
+	width: 18.75rem;
+	height: 3.75rem;
+	background: transparent
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	position: relative
+	color: #06ff00;
+	font-family: 'Neris';
+	cursor: pointer
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	&:after {
+		content ""
+		display: inline-block;
+		position: absolute;
+		background: url('../images/btn.png') no-repeat;
+		background-size: contain
+		background-position: center center
+		width: 32.75rem;
+		height: 17.25rem;
+		pointer-events: none;
+		top: 50%
+		left: 50%
+		transform translate(-50%, -50%)
+		opacity: 1
+		transition opacity 300ms ease-in-out
+	}
+	&:before {
+		content ""
+		display: inline-block;
+		position: absolute;
+		background: url('../images/btn-hover.png') no-repeat;
+		background-size: contain
+		background-position: center center
+		width: 32.75rem;
+		height: 17.25rem;
+		pointer-events: none;
+		opacity: 0
+		top: 50%
+		left: 50%
+		transform translate(-50%, -50%)
+		transition opacity 300ms ease-in-out
+	}
+	span {
+		color: #06ff00;
+	}
+	&:hover {
+		&:after {
+			opacity: 0
+			
+		}
+		&:before {
+			opacity: 1
+		}
+	}
+}
+
+.js__show {
+	opacity: 0
+	transition $opacityTransition
+}
+
+.animate {
+	opacity: 1
+}

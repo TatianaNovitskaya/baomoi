@@ -1,0 +1,101 @@
+.flex {
+  display: flex
+}
+
+.flex-between {
+  display: flex
+  justify-content: space-between
+}
+
+.flex-end {
+  display: flex
+  justify-content: flex-end
+}
+
+.flex-center {
+  display: flex
+  justify-content: center
+  align-items: center
+}
+.flex-align-center {
+  display: flex
+  align-items: center
+}
+
+.flex-align-end {
+  display: flex
+  align-items: flex-end
+}
+
+.flex-justify-end {
+  display: flex
+  justify-content: flex-end
+}
+
+.flex-column-center {
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+}
+.flex-column-center-vertical {
+  display: flex
+  flex-direction: column
+  justify-content: center
+}
+.font_700{
+  font-weight: 700
+}
+.txt_italic{
+  font-style: italic
+}
+	.rotate180{
+		transform rotate(180deg)
+	}
+$speed = 300ms
+$transformTransition = transform $speed ease-in-out
+$borderTransition = border $speed ease-in-out
+$backgroundTransition = background $speed ease-in-out
+$colorTransition = color $speed ease-in-out
+$opacityTransition = opacity $speed ease-in-out
+
+rem(amount) {
+  unit(ceil(amount / 16, 2), "rem")
+}
+
+per(item, minus) {
+  floor(percentage((100 / item - minus) / 100), 2)
+}
+.color_red{
+  color: #ff0000
+}
+.color_dirty-red{
+  color: #ea0f33
+}
+.color_pink{
+  color: #ee3a7d
+}
+  .w_670{
+    width: 100%
+    max-width: rem(670)
+  }
+  .w_705{
+    width: 100%
+    max-width: rem(705)
+    margin: auto
+  }
+  .w_360{
+    width: 100%
+    max-width: rem(360)
+  }
+  .w-100{
+    width: 100%
+  }
+
+.w_530{
+  width: 100%
+  max-width: rem(530)
+}
+  .txt_underline{
+    text-decoration: underline
+  }
